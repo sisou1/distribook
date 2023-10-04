@@ -1,4 +1,4 @@
-package com.epsi.ok;
+package com.epsi.distribook;
 
 import android.os.Bundle;
 
