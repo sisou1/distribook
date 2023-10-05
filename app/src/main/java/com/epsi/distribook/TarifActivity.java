@@ -56,7 +56,7 @@ public class TarifActivity extends AppCompatActivity {
                     startActivity(intent);
                     return true;
                 } else if (itemId == MENU_ITEM_2) {
-                    Intent intent = new Intent(TarifActivity.this, SuggestionActivity.class);
+                    Intent intent = new Intent(TarifActivity.this, DistributeurActivity.class);
                     startActivity(intent);
                     return true;
                 }
