@@ -21,8 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ConnexionActivity">
-            <!-- Définissez ici le thème de l'activité si nécessaire -->
+        <activity
+            android:name=".ConnexionActivity"
+            android:exported="true">
         </activity>
     </application>
 
