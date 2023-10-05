@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="31dp" /> <!-- La valeur de radius détermine le degré d'arrondi, ajustez-la selon vos besoins -->
+    <solid android:color="#CAF910" /> <!-- Couleur de fond du layout -->
+</shape>
