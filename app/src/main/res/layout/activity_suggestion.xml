@@ -63,7 +63,7 @@
                     android:textColor="#CAF910"
                     android:textSize="30dp"
                     android:layout_margin="20dp"
-                    android:text="Nos suggestions pour vous" />
+                    android:text="Catalogue" />
 
                 <TextView
                     android:id="@+id/textView17"
@@ -139,6 +139,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Pour vous"
+                    android:layout_gravity="center"
                     android:textColor="#CAF910"
                     android:layout_marginLeft="15dp"
                     android:textSize="18dp" />
