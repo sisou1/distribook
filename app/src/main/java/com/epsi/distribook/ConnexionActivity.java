@@ -21,6 +21,7 @@ public class ConnexionActivity extends AppCompatActivity {
 
     private static final int MENU_ITEM_1 = R.id.item1;
     private static final int MENU_ITEM_2 = R.id.item2;
+    private static final int MENU_ITEM_3 = R.id.item3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +59,11 @@ public class ConnexionActivity extends AppCompatActivity {
                 } else if (itemId == MENU_ITEM_2) {
                     Intent intent = new Intent(ConnexionActivity.this, SuggestionActivity.class);
                     startActivity(intent);
-                    return true;
+                    return true;}
+                    else if (itemId == MENU_ITEM_3) {
+                        Intent intent = new Intent(ConnexionActivity.this, TarifActivity.class);
+                        startActivity(intent);
+                        return true;
                 } else {
                     return false;
                 }
