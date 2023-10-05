@@ -30,6 +30,12 @@
                     android:background="#CAF910"
                     app:menu="@menu/menu_item">
 
+                    <ImageButton
+                        android:id="@+id/logo_account"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_8" />
                 </com.google.android.material.bottomnavigation.BottomNavigationView>
 
                 <TextView
