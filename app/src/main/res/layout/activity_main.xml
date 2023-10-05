@@ -20,11 +20,29 @@
             app:menu="@menu/menu_item">
 
             <ImageButton
+                android:id="@+id/btnhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@null"
+                android:src="@drawable/img" />
+
+            <ImageButton
                 android:id="@+id/logo_account"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
+                android:background="@null"
                 android:src="@drawable/img_8" />
+
+            <ImageButton
+                android:id="@+id/menu_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:background="@null"
+                android:src="@drawable/img_9" />
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <TextView
