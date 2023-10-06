@@ -16,7 +16,7 @@ import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
-public class TarifActivity extends AppCompatActivity {
+public class DistributeurActivity extends AppCompatActivity {
     ImageButton account, menuButton, retourButton;
     private static final int MENU_ITEM_1 = R.id.item1;
     private static final int MENU_ITEM_2 = R.id.item2;
@@ -24,20 +24,20 @@ public class TarifActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tarif);
+        setContentView(R.layout.activity_distributeur);
 
+        account = findViewById(R.id.logo_account);
+        account.setOnClickListener(v -> {
+
+            Intent intent = new Intent(DistributeurActivity.this, ConnexionActivity.class);
+            startActivity(intent);
+        });
         retourButton=findViewById(R.id.btn_retour);
         retourButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed(); //
             }
-        });
-        account = findViewById(R.id.logo_account);
-        account.setOnClickListener(v -> {
-
-            Intent intent = new Intent(TarifActivity.this, ConnexionActivity.class);
-            startActivity(intent);
         });
 
         menuButton = findViewById(R.id.menu_btn);
@@ -52,16 +52,16 @@ public class TarifActivity extends AppCompatActivity {
             popupMenu.setOnMenuItemClickListener(item -> {
                 int itemId=item.getItemId();
                 if (itemId == MENU_ITEM_1) {
-                    Intent intent = new Intent(TarifActivity.this, SuggestionActivity.class);
+                    Intent intent = new Intent(DistributeurActivity.this, SuggestionActivity.class);
                     startActivity(intent);
                     return true;
                 } else if (itemId == MENU_ITEM_2) {
-                    Intent intent = new Intent(TarifActivity.this, DistributeurActivity.class);
+                    Intent intent = new Intent(DistributeurActivity.this, DistributeurActivity.class);
                     startActivity(intent);
                     return true;
                 }
                 else if (itemId == MENU_ITEM_3) {
-                    Intent intent = new Intent(TarifActivity.this, TarifActivity.class);
+                    Intent intent = new Intent(DistributeurActivity.this, TarifActivity.class);
                     startActivity(intent);
                     return true;}
                 else {
